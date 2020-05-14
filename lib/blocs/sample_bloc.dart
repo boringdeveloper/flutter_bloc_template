@@ -27,4 +27,4 @@ class SampleBloc {
   }
 }
 
-final eventBloc = SampleBloc();
+final sampleBloc = SampleBloc();

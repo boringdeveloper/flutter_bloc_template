@@ -42,7 +42,7 @@ class _SampleListPageState extends State<SampleListPage> {
       body: Column(
         children: <Widget>[
           Expanded(
-            child: streamBuilder(eventBloc.events),
+            child: streamBuilder(sampleBloc.events),
           ),
         ],
       ),
@@ -75,7 +75,7 @@ class _SampleListPageState extends State<SampleListPage> {
 
     final SampleListRequest request =
         SampleListRequest(searching: searching, limit: limit, offset: offset);
-    eventBloc.fetchSampleList(request);
+    sampleBloc.fetchSampleList(request);
   }
 
   void onStateChanged(ScreenState state) {
