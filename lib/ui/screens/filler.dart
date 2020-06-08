@@ -7,7 +7,7 @@ class FillerPage extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.black,
       body: Center(
-        child: Expanded(
+        child: Container(
           child: Text(
             'Filler Page!.',
             style: headingStyle,

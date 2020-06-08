@@ -30,7 +30,7 @@ class _SampleListPageState extends State<SampleListPage> {
 
   @override
   Widget build(BuildContext context) {
-    fetchEventList();
+    // fetchEventList();
     setState(() {});
 
     return Scaffold(
