@@ -7,8 +7,8 @@ class EventRepositoryImpl {
   final Api api = Api();
 
   Future<SampleList> fetchEventList(SampleListRequest request) async {
-    final Response response = await api.post(
-        ApiUris.PROJECT_KEY + ApiUris.SAMPLE_ENDPOINT, request.toMap());
+    final Response response =
+        await api.post(ApiUris.SAMPLE_ENDPOINT, request.toMap());
 
     return SampleList.fromMap(response.data);
   }
